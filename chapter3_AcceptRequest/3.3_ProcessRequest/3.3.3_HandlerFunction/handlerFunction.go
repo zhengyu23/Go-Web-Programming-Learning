@@ -8,7 +8,7 @@ import (
 )
 
 // HandlerFunc函数类型，可以把一个带有正确签名的函数f转换成一个带有方法f的处理器Handler.
-// mux.Handle(pattern, HandlerFunc(3.3_处理器和处理器函数))
+// mux.Handle(pattern, HandlerFunc(HandlerAndHandlerFunction))
 
 //	签名 - signature
 

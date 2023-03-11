@@ -1,7 +1,7 @@
 
 处理器和处理器函数的区别
 ____________________
-处理器:
+处理器:    Handler
     实现了 ServeHTTP(w http.ResponseWriter, r *http.Request) 方法的结构体.
     即实现了 http.Handler 接口(实现 ServeHTTP 方法)
         type Handler interface {
@@ -15,7 +15,7 @@ ____________________
         fmt.Fprint(w, "Hello World")
     }
 ____________________
-处理器函数:
+处理器函数:  Handler Function
     与处理器拥有相同行为的函数, 这些函数与 ServeHTTP 拥有相同的签名(signature)
     即接收 http.ResponseWriter 和指向 http.Request 结构的指针作为参数.
 

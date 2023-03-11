@@ -11,7 +11,7 @@ func main() {
 		Addr:    "127.0.0.1:8080",
 		Handler: nil,
 	}
-	//	cert.pem: SSL证书 -> 3.2.2_通过HTTPS提供服务(Secure Socket Layer,安全套接层)
+	//	cert.pem: SSL证书 -> 通过HTTPS提供服务(Secure Socket Layer,安全套接层)
 	//		是一种通过公钥基础设施(Public Key Infrastructure, PKI)
 	//		为通信双方提供数据加密和身份验证的协议. 其中通信双方通常是客户端和服务器.
 

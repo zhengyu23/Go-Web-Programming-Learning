@@ -11,10 +11,10 @@ func main() {
 
 	// 2. 服务静态文件
 	files := http.FileServer(http.Dir("/public")) // 能为指定目录中的静态文件服务的处理器
-	// partten: "/static/", 3.3_处理器和处理器函数 Handler
+	// partten: "/static/", Handler和HandlerFunction Handler
 	mux.Handle("/static/", http.StripPrefix("/static", files)) // 使用StripPrefix函数移除请求URL中的指定前缀
 
-	// 3. 创建处理器函数	处理器 - 3.3_处理器和处理器函数
+	// 3. 创建处理器函数	处理器 - Handler和HandlerFunction
 	// HandleFunc 函数把请求重定向到处理器函数 -> route_main.go
 
 	mux.HandleFunc("", index)

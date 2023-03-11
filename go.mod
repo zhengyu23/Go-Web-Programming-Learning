@@ -1,4 +1,4 @@
-module http
+module go-web-programming-learning
 
 go 1.20
 
