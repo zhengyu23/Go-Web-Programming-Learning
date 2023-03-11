@@ -1,0 +1,21 @@
+
+{{/* 代码清单5-23   显示的定义一个模板*/}}
+{{/* 代码清单5-24   在一个模板文件里面定义多个模板*/}}
+
+{{ define "layout" }}
+
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html charset=utf-8"/>
+        <title>Go Web Programming</title>
+    </head>
+    <body>
+      <div>{{ template "content" }}</div>
+    </body>
+</html>
+
+{{ end }}
+
+{{ define "content" }}
+Hello World!
+{{ end }}

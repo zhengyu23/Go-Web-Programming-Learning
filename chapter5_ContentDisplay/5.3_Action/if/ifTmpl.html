@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{{/*    代码清单5-4     使用了条件动作的模板文件 */}}
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Go Web Programming</title>
+    </head>
+    <body>
+        {{ if . }}
+            Number is greater than 5!
+        {{ else }}
+            Number is 5 or less!
+        {{ end}}
+    </body>
+</html>

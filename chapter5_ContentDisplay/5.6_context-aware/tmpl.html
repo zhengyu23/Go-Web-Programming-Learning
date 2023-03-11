@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+{{/* 代码清单5-18   上下文感知模板*/}}
+    <head>
+        <meta http-equiv="content-type" content="text/html charset=utf-8"/>
+        <title>Go Web Programming</title>
+    </head>
+    <body>
+        <div> {{ . }}</div>
+        <div><a href="/{{ . }}">Path</a></div>
+        <div><a href="/?q={{ . }}">Query</a></div>
+        <div><a onclick="f('{{ . }}')">Onclick</a></div>
+    </body>
+</html>

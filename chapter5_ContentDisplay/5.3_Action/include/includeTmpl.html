@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{{/*    代码清单5-9 模板1 */}}
+{{/*    代码清单5-11 通过参数将模板1众得数据传递给被嵌套的模板2 */}}
+<html>
+<head>
+    <meta http-equiv="x-ua-compatible" content="text/html; charset=utf-8"/>
+    <title>Go Web Programming</title>
+</head>
+<body>
+<ul>
+    <div> This is includeTmpl.html before</div>
+    <div> This is the value of the dot in includeTmpl.html - [{{ . }}]</div>
+    <hr />
+{{/*    {{ template "includeTmpl2.html"  }}*/}}
+    {{ template "includeTmpl2.html" . }}
+    <ht />
+    <div> This is includeTmpl.html after</div>
+</ul>
+</body>
+</html>

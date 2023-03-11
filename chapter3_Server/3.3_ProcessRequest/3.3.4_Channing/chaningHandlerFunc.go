@@ -19,7 +19,7 @@ func log(h http.HandlerFunc) http.HandlerFunc {
 	// 返回处理器函数
 	return func(w http.ResponseWriter, r *http.Request) {
 		name := runtime.FuncForPC(reflect.ValueOf(h).Pointer()).Name()
-		fmt.Println("Handler function called - " + name)
+		fmt.Println("Handler 5.5_function called - " + name)
 		h(w, r)
 	}
 }

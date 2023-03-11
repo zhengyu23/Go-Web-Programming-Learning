@@ -1,16 +1,17 @@
 package main
 
+// 代码清单5-25 使用显式定义的模板
+
 import (
 	"html/template"
 	"net/http"
 )
 
-// 代码清单5-2	在处理器函数中触发模板引擎
-
 func process(w http.ResponseWriter, r *http.Request) {
-	directory := "./chapter5_ContentDisplay/5.2_TemplateEngine"
-	t, _ := template.ParseFiles(directory + "/simpleTemplate.html")
-	t.Execute(w, "Hello World!")
+	filename := "chapter5_ContentDisplay/5.7_NestedTemplate/layout.html"
+	t, _ := template.ParseFiles(filename)
+	t.ExecuteTemplate(w, "layout", "")
+
 }
 
 func main() {

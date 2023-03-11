@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-{{/* 代码清单5-1    一个简单的模板*/}}
+{{/*    代码清单5-6 带有备选结果的迭代动作 */}}
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>Go Web Programming</title>
     </head>
     <body>
-        {{ . }}
+        <ul>
+        {{ range . }}
+           <li>{{ . }}</li>
+        {{ end}}
+        </ul>
     </body>
 </html>

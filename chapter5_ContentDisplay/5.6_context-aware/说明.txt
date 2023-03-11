@@ -1,0 +1,1 @@
+上下文感知不仅能够自动对HTML进行转义，还能防止基于JavaScript、CSS甚至URL的XSS攻击。

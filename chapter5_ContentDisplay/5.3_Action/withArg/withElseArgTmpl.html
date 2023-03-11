@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{{/*   代码清单5-8	在设置点的时候提供备选方案 */}}
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Go Web Programming</title>
+</head>
+<body>
+    <div>The dot is {{ . }}</div>
+        <div>
+            {{/*       with 后为“”空，所以将展示else的内容     */}}
+            {{ with ""}}
+                Now the dot is set to {{ . }}
+            {{ else }}
+                The dot is still {{ . }}
+            {{ end }}
+        </div>
+    <div>The dot is {{ . }} again</div>
+</body>
+</html>
