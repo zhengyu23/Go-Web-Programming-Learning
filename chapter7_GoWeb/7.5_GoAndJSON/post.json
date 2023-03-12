@@ -1,0 +1,20 @@
+{
+  "id": 1,
+  "content": "Hello world",
+  "author":{
+    "id": 2,
+    "name": "zheng yu"
+  },
+  "comments": [
+    {
+      "id": 3,
+      "content": "have a great day",
+      "author": "cai"
+    },
+    {
+      "id": 4,
+      "content": "hTTT",
+      "author": "ABC"
+    }
+  ]
+}
