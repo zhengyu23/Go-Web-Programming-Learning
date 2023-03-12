@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "cd355ffc-6f42-478f-9876-b09d47ce2c95",
+		"name": "Go-web",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26186689"
+	},
+	"item": [
+		{
+			"name": "GET 获取帖子",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "POST 新增帖子",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "PUT 更新帖子",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete 删除帖子",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
